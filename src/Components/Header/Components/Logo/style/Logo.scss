@@ -1,0 +1,35 @@
+.logo {
+  display: flex;
+  align-items: center;
+  color: #333333;
+  max-width: 240px;
+  width: 100%;
+  
+  &__img {
+    max-width: 75px;
+    display: block;
+
+    @media(max-width: 800px) {
+      max-width: 55px;
+    }
+  }
+  &__box {
+    margin-left: 20px;
+  }
+  &__title {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #333333;
+    line-height: 110%;
+    font-family: "ProximaNova-Light";
+
+  }
+  &__subtitle {
+    font-size: 6.5px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 110%;
+    font-family: "ProximaNova-Regular";
+  }
+}

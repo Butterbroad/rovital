@@ -1,0 +1,35 @@
+.advantages {
+  &__wrapper {
+    max-width: 1690px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &__title {
+    font-size: 35px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #2F2F2F;
+    font-family: "PFDinCompPro-Medium";
+    font-style: italic;
+    margin-bottom: 90px;
+
+    @media (max-width: 425px) {
+      margin-bottom: 40px;
+    }
+  }
+  &__items {
+    max-width: 1130px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    @media (max-width: 425px) {
+      justify-content: center;
+    }
+  }
+}

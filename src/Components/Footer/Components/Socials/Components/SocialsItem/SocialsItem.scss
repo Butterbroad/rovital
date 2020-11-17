@@ -1,0 +1,11 @@
+.socials-item {
+  max-width: 21.37px;
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}

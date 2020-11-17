@@ -1,0 +1,20 @@
+.info {
+  display: flex;
+  flex-direction: column;
+
+  @media(max-width: 1024px) {
+    display: none;
+  }
+  &__tel {
+    font-size: 16px;
+    line-height: 23px;
+    color: #2F2F2F;
+    font-family: "ProximaNova-Bold";
+  }
+  &__mail {
+    font-size: 12px;
+    line-height: 23px;
+    color: #1D3665;
+    font-family: "ProximaNova-Bold";
+  }
+}

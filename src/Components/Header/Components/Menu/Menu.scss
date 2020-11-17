@@ -1,0 +1,25 @@
+.menu {
+
+  @media(max-width: 1024px) {
+    display: none;
+  }
+  
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__list-item {
+    margin-right: 37px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__list-link {
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2F2F2F;
+    font-family: "ProximaNova-Regular";
+  }
+}

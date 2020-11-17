@@ -1,0 +1,40 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3px;
+  min-width: 205px;
+  height: 56px;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: "PFDinCompPro-Bold";
+  transform: skew(-10deg);
+  transition: all .3s ease;
+  &_main {
+  color: #1D3665;
+  border: 1px solid #1D3665;
+  background-color: #fff;
+    &:hover {
+      background-color: #1D3665;
+      color: #fff;
+    }
+  }
+  &_red {
+    background: linear-gradient(269.1deg, #5B0000 -41%, rgba(154, 4, 4, 0) 105.49%), #D30303;
+    color: #fff;
+
+    @media(max-width: 425px) {
+      min-width: 262px;
+      font-size: 20px;
+      height: 41px;
+    }
+  }
+  &_green {
+    color: #011B3C;
+    background-color: #00FF73;
+  }
+
+}

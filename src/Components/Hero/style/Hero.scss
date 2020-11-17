@@ -1,0 +1,15 @@
+.hero {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(./img/bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
+  @media(max-width: 1440px) {
+    background-size: cover;
+  }
+  @media (max-width: 1024px) {
+    height: 100%;
+  }
+}
