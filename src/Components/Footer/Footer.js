@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__wrapper">
-        <div className="footer__content">
+        <div className="footer__box footer__box_md">
           <div className="footer__title">
             ЕСТЬ ВОПРОС?
           </div>
@@ -15,6 +15,18 @@ function Footer() {
             Наша команда экспертов всегда готова помочь.
             Просто оставьте нам сообщение, и мы свяжемся
             с вами напрямую
+          </div>
+        </div>
+        <div className="footer__content">
+          <div className="footer__box">
+            <div className="footer__title">
+              ЕСТЬ ВОПРОС?
+          </div>
+            <div className="footer__text">
+              Наша команда экспертов всегда готова помочь.
+              Просто оставьте нам сообщение, и мы свяжемся
+              с вами напрямую
+          </div>
           </div>
           <div className="footer__info">
             <div className="footer__info-title">

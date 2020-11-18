@@ -18,5 +18,9 @@
     letter-spacing: 0.02em;
     color: #000000;
     font-family: "ProximaNova-Regular";
+
+    @media (max-width: 425px) {
+      font-size: 14px;
+    }
   }
 }

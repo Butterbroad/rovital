@@ -1,0 +1,13 @@
+.burger {
+  width: 15px;
+  height: 12px;
+  margin-right: 10px;
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  display: none;
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}

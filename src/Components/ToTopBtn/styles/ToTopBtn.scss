@@ -1,0 +1,18 @@
+.toTopBtn {
+  width: 82px;
+  height: 82px;
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  z-index: 10;
+  cursor: pointer;
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  @media (max-width: 1024px) {
+    width: 52px;
+    height: 52px;
+  }
+}
