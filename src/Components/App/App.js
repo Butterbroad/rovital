@@ -15,6 +15,7 @@ function App() {
       setShowBtn(window.scrollY > 700)
     }
     window.addEventListener('scroll', getBtn)
+
     return () => window.removeEventListener('scroll', getBtn)
   }, [])
 
