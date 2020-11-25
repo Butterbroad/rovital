@@ -1,0 +1,68 @@
+.johan-advantages {
+  &__wrapper {
+    max-width: 910px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 35px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    margin-bottom: 45px;
+    font-family: "PFDinCompPro-Medium", sans-serif;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0);
+      bottom: -15px;
+      width: 48px;
+      height: 5px;
+      background: #00FF73;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #fff;
+    margin-bottom: 50px;
+    font-family: "ProximaNova-Regular", sans-serif;
+    span {
+      font-family: "ProximaNova-Bold", sans-serif;
+      font-size: 19px;
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 160px;
+    width: 100%;
+  }
+  &__item-img {
+    max-width: 60px;
+    margin: 0 auto 14px;
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+  &__item-title {
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "ProximaNova-Bold", sans-serif;
+  }
+}

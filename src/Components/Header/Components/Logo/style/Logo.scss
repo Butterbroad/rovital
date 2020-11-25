@@ -7,7 +7,9 @@
   
   &__img {
     max-width: 75px;
+    width: 100%;
     display: block;
+    stroke: #333;
 
     @media(max-width: 800px) {
       max-width: 55px;

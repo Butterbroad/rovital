@@ -1,0 +1,51 @@
+.johan-partners {
+  padding: 125px 0 185px;
+  &__wrapper {
+    max-width: 1130px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 35px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    margin-bottom: 45px;
+    font-family: "PFDinCompPro-Medium", sans-serif;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0);
+      bottom: -15px;
+      width: 48px;
+      height: 5px;
+      background: #00FF73;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #fff;
+    margin-bottom: 35px;
+    font-family: "ProximaNova-Regular", sans-serif;
+  }
+  &__logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    max-width: 73px;
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+}

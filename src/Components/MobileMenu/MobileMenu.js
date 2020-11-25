@@ -43,9 +43,9 @@ function MobileMenu({ setHide }) {
           </ul>
         </div>
 
-        <Btn btnText="НАПИШИТЕ НАМ" btnClassMod="mobile-menu__btn btn_main" />
-        <Info classMod="mobile-menu__info" />
-        <MenuSocials classMod="mobile-menu__socials" />
+        <Btn btnText="НАПИШИТЕ НАМ" modClass="mobile-menu__btn btn_main" />
+        <Info modClass="mobile-menu__info" />
+        <MenuSocials modClass="mobile-menu__socials" />
       </div>
     </div>
   )

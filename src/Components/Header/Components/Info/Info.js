@@ -1,11 +1,14 @@
 import React from 'react'
 import './Info.scss'
 
-function Info({ classMod }) {
+function Info({ modClass }) {
   return (
-    <div className={`${classMod} info`}>
-      <a href="tel:375293000000" className="info__tel">+ 37529-300-00-00</a>
-      <a href="mailto:support@simpletoro.com" className="info__mail">support@simpletoro.com</a>
+    <div className={`${modClass} info`}>
+      <div className="info__box">
+        <a href="tel:375296512910" className="info__tel">+ 375 29 651 29 10</a>
+        <a href="tel:74991130153" className="info__tel">+ 7 499 113 01 53</a>
+      </div>
+      <a href="mailto:tik.rovital@gmail.com" className="info__mail">tik.rovital@gmail.com</a>
     </div>
   )
 }

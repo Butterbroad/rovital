@@ -7,10 +7,10 @@ import telegram from './style/img/telegram.svg'
 import MenuSocialsItem from './Components/MenuSocialsItem/MenuSocialsItem'
 
 
-function MenuSocials({ classMod }) {
+function MenuSocials({ modClass }) {
   const icons = [youtube, vk, insta, telegram]
   return (
-    <div className={`${classMod} menu-socials`}>
+    <div className={`${modClass} menu-socials`}>
       {icons.map((icon, index) => (
         <MenuSocialsItem key={index} icon={icon} />
       ))}

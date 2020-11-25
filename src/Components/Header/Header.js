@@ -6,14 +6,14 @@ import Info from './Components/Info/Info'
 import Btn from '../Btn/Btn'
 import Burger from './Components/Burger/Burger'
 
-function Header({ setShow }) {
+function Header({ setShow, modClass }) {
   return (
-    <header className='header'>
+    <header className={`header ${modClass}`}>
       <div className="header__wrapper">
         <Logo />
         <Menu />
-        <Info classMod="header__info" />
-        <Btn btnText="НАПИШИТЕ НАМ" btnClassMod="header__btn btn_main" />
+        <Info modClass="header__info" />
+        <Btn btnText="НАПИШИТЕ НАМ" modClass="header__btn btn_main" />
         <Burger setShow={setShow} />
       </div>
     </header>

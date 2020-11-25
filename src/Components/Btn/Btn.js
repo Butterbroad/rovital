@@ -1,9 +1,9 @@
 import React from 'react'
 import './Btn.scss'
 
-function Btn({ btnText, btnClassMod }) {
+function Btn({ btnText, modClass }) {
   return (
-    <a href="" className={`btn ${btnClassMod}`} >
+    <a href="" className={`btn ${modClass}`} >
       { btnText}
     </a >
   )
