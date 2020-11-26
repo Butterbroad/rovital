@@ -9,9 +9,9 @@ function JohanContent() {
   return (
     <section className='johan-content'>
       <JohanProductItem />
-      <JohanProductSlider />
-      <JohanPartners />
-      <JohanAdvantages />
+      {/* <JohanProductSlider /> */}
+      {/* <JohanPartners /> */}
+      {/* <JohanAdvantages /> */}
     </section>
   )
 }

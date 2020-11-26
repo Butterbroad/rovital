@@ -5,7 +5,7 @@ import Socials from './Components/Socials/Socials'
 
 function Footer({ modClass }) {
   return (
-    <footer className={`footer ${modClass}`}>
+    <footer className={`footer ${modClass || ""}`}>
       <div className="footer__wrapper">
         <div className="footer__box footer__box_md">
           <div className="footer__title">

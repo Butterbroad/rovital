@@ -8,13 +8,13 @@ import Burger from './Components/Burger/Burger'
 
 function Header({ setShow, modClass }) {
   return (
-    <header className={`header ${modClass}`}>
+    <header className={`header ${modClass || ""}`}>
       <div className="header__wrapper">
         <Logo />
         <Menu />
         <Info modClass="header__info" />
         <Btn btnText="НАПИШИТЕ НАМ" modClass="header__btn btn_main" />
-        <Burger setShow={setShow} />
+        <Burger setShow={setShow} modClass="header__burger" />
       </div>
     </header>
   )

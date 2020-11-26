@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles/Burger.scss'
-import burgerImg from './styles/img/burger.svg'
 
 function Burger({ setShow, modClass }) {
   return (

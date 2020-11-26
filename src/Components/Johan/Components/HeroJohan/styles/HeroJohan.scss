@@ -1,6 +1,13 @@
 .hero-johan {
   height: 100vh;
   overflow: hidden;
+
+  @media (max-width: 320px) {
+    height: 115vh;
+  }
+  @media (max-width: 320px) and (max-height: 468px) {
+    min-height: 140vh;
+  }
   &__wrapper {
     display: flex;
     align-items: center;
@@ -13,6 +20,26 @@
     padding: 0 230px 0 280px;
     position: relative;
     margin-top: -120px;
+
+    @media (max-width: 1440px) {
+      padding: 0 180px 0 180px;
+    }
+    @media (max-width: 1024px) {
+      padding: 0 80px 0 80px;
+    }
+    @media (max-width: 800px) {
+      padding: 0 30px 15% 30px;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    @media (max-width: 768px) {
+      padding: 0 30px 10% 30px;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    @media (max-width: 375px) {
+      padding: 0 15px 0 15px;
+    }
   }
   &__box {
 
@@ -20,6 +47,14 @@
     &_1 {
       max-width: 500px;
       width: 100%;
+      z-index: 2;
+
+      @media (max-width: 1366px) {
+        max-width: 350px;
+      }
+      @media (max-width: 800px) {
+        max-width: 500px;
+      }
     }
 
     &_2 {
@@ -27,10 +62,26 @@
       top: 50%;
       left: 50%;
       transform: translate(-35%,-43%);
+
+      @media (max-width: 800px) {
+        transform: translate(-50%,0);
+        top: 15%;
+        left: 50%;
+      }
+      @media (max-width: 768px) {
+        top: 13%;
+      }
+      @media (max-width: 375px) and (max-height: 667px) {
+        top: 16%;
+      }
     }
 
     &_3 {
       margin-top: -20%;
+      
+      @media (max-width: 800px) {
+        display: none;
+      }
     }
   }
   &__title {
@@ -42,6 +93,20 @@
     font-family: "PFDinCompPro-Bold", sans-serif;
     font-style: italic;
     margin-bottom: 33px;
+
+    @media (max-width: 1600px) {
+      font-size: 52px;
+    }
+    @media (max-width: 1366px) {
+      font-size: 46px;
+    }
+    @media (max-width: 1366px) {
+      margin-bottom: 25px;
+    }
+    @media (max-width: 639px) {
+      font-size: 26px;
+      line-height: 110%;
+    }
   }
   &__text {
     max-width: 432px;
@@ -55,6 +120,14 @@
       text-transform: uppercase;
       font-family: "ProximaNova-Bold", sans-serif;
     }
+
+    @media (max-width: 1366px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 639px) {
+      font-size: 14px;
+      line-height: 125%;  
+    }
   }
   &__btn {
     height: 60px;
@@ -66,12 +139,38 @@
     &:hover {
       box-shadow: 0px 4px 20px #00FF73;
     }
+
+    @media (max-width: 639px) {
+      height: 40px;  
+      font-size: 20px;
+      margin: 0 auto;
+    }
   }
   &__img {
     min-width: 881px;
     img {
       max-width: 100%;
       display: block;
+    }
+
+    @media (max-width: 1600px) {
+      max-width: 721px;
+      min-width: auto;
+    }
+    @media (max-width: 1366px) {
+      max-width: 621px;
+    }
+    @media (max-width: 800px) {
+      min-width: 600px;
+    }
+    @media (max-width: 768px) {
+      min-width: 500px;
+    }
+    @media (max-width: 639px) {
+      min-width: 450px;
+    }
+    @media (max-width: 375px) and (max-height: 667px) {
+      min-width: 350px;
     }
   }
 }

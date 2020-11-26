@@ -9,7 +9,7 @@ function Johan() {
     <div className="johan">
       <HeroJohan />
       <JohanContent />
-      <Footer modClass="footer_johan" />
+      {/* <Footer modClass="footer_johan" /> */}
     </div>
   )
 }
