@@ -1,4 +1,33 @@
 .johan-content {
   padding-bottom: 200px;
   overflow: hidden;
+  position: relative;
+
+  @media (max-width: 1440px) {
+    padding-bottom: 160px;
+  }
+  @media (max-width: 800px) {
+    padding-bottom: 100px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-width: 1px;
+    border-image-slice: 1;
+    border-image-source: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: .3;
+
+  }
+
+  &__wrapper {
+    max-width: 1690px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }

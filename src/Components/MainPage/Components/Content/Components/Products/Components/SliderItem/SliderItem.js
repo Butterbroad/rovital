@@ -1,9 +1,10 @@
 import React from 'react'
 import './SliderItem.scss'
 import Btn from '../../../../../../../Btn/Btn'
+import { Link } from 'react-router-dom';
 
 
-function SliderItem({ logo, text }) {
+function SliderItem({ logo, text, path }) {
   return (
     <div className="slider-products__slide slider-item">
       <div className="slider-item__logo">
@@ -12,7 +13,9 @@ function SliderItem({ logo, text }) {
       <div className="slider-item__title">
         {text}
       </div>
-      <Btn btnText="Подробнее" modClass="slider-item__btn btn_main" />
+      <Link to={path}>
+        <Btn btnText="Подробнее" modClass="slider-item__btn btn_main" />
+      </Link>
     </div>
   )
 }

@@ -6,17 +6,33 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+
+    @media (max-width: 800px) {
+      padding: 30px 15px;
+    }
+    @media (max-width: 640px) {
+      padding: 50px 15px 60px;
+    }
   }
   &__item {
     display: flex !important;
     justify-content: center;
     align-items: center;
     outline: transparent;
+
+    @media (max-width: 639px) {
+      flex-direction: column;
+    }
   }
   &__box {
     max-width: 445px;
     width: 100%;
     margin-right: 10px;
+
+    @media (max-width: 639px) {
+      margin: 0;
+      order: 2;
+    }
   }
   &__title {
     font-size: 35px;
@@ -39,6 +55,16 @@
       width: 42px;
       height: 5px;
       background-color: #00FF73;
+
+      @media (max-width: 639px) {
+        width: 47.5px;
+        height: 3px;
+      }
+    }
+
+    @media (max-width: 639px) {
+      font-size: 20px;
+      margin-bottom: 28px;
     }
   }
   &__subtitle {
@@ -49,6 +75,10 @@
     color: #fff;
     margin-bottom: 20px;
     font-family: "ProximaNova-Bold", sans-serif;
+
+    @media (max-width: 639px) {
+      margin-bottom: 15px;
+    }
   }
   &__text {
     font-family: "ProximaNova-Regular", sans-serif;
@@ -63,6 +93,11 @@
     img {
       max-width: 100%;
       display: block;
+    }
+
+    @media (max-width: 639px) {
+      order: 1;
+      max-width: 276px;
     }
   }
 
@@ -79,10 +114,6 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
-
-    @media(max-width: 640px) {
-      display: none !important;
-    }
   }
   .slick-next {
     background-image: url(./img/arrow.svg);
@@ -93,6 +124,18 @@
     top: auto;
     bottom: 15%;
     left: 10%;
+
+    @media(max-width: 800px) {
+      left: 8%;
+      bottom: -15%;
+    }
+    @media(max-width: 640px) {
+      bottom: -25%;
+    }
+    @media(max-width: 639px) {
+      bottom: -15%;
+      left: 23%;
+    }
   }
   .slick-prev {
     background-image: url(./img/arrow.svg);
@@ -102,5 +145,16 @@
     top: auto;
     bottom: 15%;
     left: 5%;
+
+    @media(max-width: 800px) {
+      left: 0;
+      bottom: -15%;
+    }
+    @media(max-width: 640px) {
+      bottom: -25%;
+    }
+    @media(max-width: 639px) {
+      bottom: -15%;
+    }
   }
 }

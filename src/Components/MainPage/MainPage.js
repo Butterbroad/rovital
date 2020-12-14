@@ -5,8 +5,7 @@ import Footer from '../Footer/Footer';
 import MobileMenu from '../MobileMenu/MobileMenu';
 import ToTopBtn from '../ToTopBtn/ToTopBtn';
 
-function MainPage() {
-  const [show, setShow] = useState(false);
+function MainPage({ setShow, showMenu, setHide }) {
   const [showBtn, setShowBtn] = useState(false);
 
   useEffect(() => {
@@ -20,11 +19,11 @@ function MainPage() {
 
   return (
     <div className="main-page">
-      <Hero setShow={() => setShow(true)} />
+      <Hero setShow={setShow} />
       <Content />
       <Footer />
       {
-        show && <MobileMenu setHide={() => setShow(false)} />
+        showMenu && <MobileMenu setHide={setHide} />
       }
       {
         showBtn && <ToTopBtn />

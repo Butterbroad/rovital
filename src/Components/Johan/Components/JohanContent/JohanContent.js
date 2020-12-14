@@ -8,10 +8,12 @@ import './JohanContent.scss'
 function JohanContent() {
   return (
     <section className='johan-content'>
-      <JohanProductItem />
-      {/* <JohanProductSlider /> */}
-      {/* <JohanPartners /> */}
-      {/* <JohanAdvantages /> */}
+      <div className="johan-content__wrapper">
+        <JohanProductItem />
+        <JohanProductSlider />
+        <JohanPartners />
+        <JohanAdvantages />
+      </div>
     </section>
   )
 }

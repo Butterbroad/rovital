@@ -1,5 +1,13 @@
 .johan-partners {
   padding: 125px 0 185px;
+
+  @media (max-width: 1600px) {
+    padding: 80px 0 125px;
+  }
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
   &__wrapper {
     max-width: 1130px;
     padding: 0 15px;
@@ -15,6 +23,7 @@
     color: #fff;
     position: relative;
     margin-bottom: 45px;
+    font-style: italic;
     font-family: "PFDinCompPro-Medium", sans-serif;
     &::before {
       content: '';
@@ -25,6 +34,19 @@
       width: 48px;
       height: 5px;
       background: #00FF73;
+
+      @media (max-width: 639px) {
+        width: 47.5px;
+        height: 3px;
+        left: 0;
+        transform: translate(0,0);
+      }
+    }
+
+    @media (max-width: 639px) {
+      font-size: 20px;
+      margin-bottom: 28px;
+      text-align: left;
     }
   }
   &__text {
@@ -35,17 +57,37 @@
     color: #fff;
     margin-bottom: 35px;
     font-family: "ProximaNova-Regular", sans-serif;
+
+    @media (max-width: 639px) {
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
   }
   &__logos {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
   }
   &__logo {
     max-width: 73px;
     img {
       max-width: 100%;
       display: block;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 13px;
+      min-width: 16%;
+    }
+    @media (max-width: 640px) {
+      min-width: 57px;
+    }
+    @media (max-width: 639px) {
+      max-width: 57px;
     }
   }
 }

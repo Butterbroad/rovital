@@ -34,12 +34,12 @@ function Products() {
   };
 
   const items = [
-    { logo: logo1, text: "Интернет- магазин спортивной техники" },
-    { logo: logo2, text: "Интернет- магазин спортивной техники" },
-    { logo: logo1, text: "Интернет- магазин спортивной техники" },
-    { logo: logo2, text: "Интернет- магазин спортивной техники" },
-    { logo: logo1, text: "Интернет- магазин спортивной техники" },
-    { logo: logo2, text: "Интернет- магазин спортивной техники" },
+    { logo: logo1, text: "Интернет- магазин спортивной техники", path: "/johan" },
+    { logo: logo2, text: "Интернет- магазин спортивной техники", path: "/polar" },
+    { logo: logo1, text: "Интернет- магазин спортивной техники", path: "/johan" },
+    { logo: logo2, text: "Интернет- магазин спортивной техники", path: "/polar" },
+    { logo: logo1, text: "Интернет- магазин спортивной техники", path: "/johan" },
+    { logo: logo2, text: "Интернет- магазин спортивной техники", path: "/polar" },
   ]
 
   return (
@@ -52,7 +52,7 @@ function Products() {
           <div className="slider-products__body">
             <Slider {...settings}>
               {items.map((item, index) => (
-                <SliderItem key={index} logo={item.logo} text={item.text} />
+                <SliderItem key={index} logo={item.logo} text={item.text} path={item.path} />
               ))}
             </Slider>
           </div>

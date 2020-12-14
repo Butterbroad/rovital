@@ -3,7 +3,7 @@ import './Menu.scss'
 
 function Menu({ modClass }) {
   return (
-    <nav className={`header__menu menu ${modClass}`}>
+    <nav className={`header__menu menu ${modClass || ''}`}>
       <ul className="menu__list">
         <li className="menu__list-item">
           <a href="" className="menu__list-link">

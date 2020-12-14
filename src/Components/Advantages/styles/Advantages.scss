@@ -1,0 +1,71 @@
+.advantages {
+  &__wrapper {
+    max-width: 1690px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &__title {
+    font-size: 35px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #2F2F2F;
+    font-family: "PFDinCompPro-Medium";
+    font-style: italic;
+    position: relative;
+    margin-bottom: 90px;
+
+    @media (max-width: 425px) {
+      margin-bottom: 40px;
+      font-size: 20px;
+    }
+  }
+  &__items {
+    max-width: 1130px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    @media (max-width: 425px) {
+      justify-content: center;
+    }
+  }
+
+  &_polar {
+      margin: 100px 0 235px;
+
+      @media (max-width: 767px) {
+        margin: 50px 0 90px;
+      }
+    .advantages__title {
+      margin-bottom: 60px;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+        bottom: -15px;
+        width: 47px;
+        height: 5px;
+        background-color: #F36B3A;
+
+        @media (max-width: 767px) {
+          left: 0;
+          transform: translate(0,0);
+        }
+      }
+
+      @media (max-width: 767px) {
+        text-align: left;
+        margin-bottom: 40px;
+      }
+    }
+    .item-advantages__icon {
+      max-width: 73px;
+    }
+  }
+}
