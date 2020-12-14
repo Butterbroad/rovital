@@ -5,10 +5,10 @@ import Posibilities from './Components/Posibilities/Posibilities'
 import './styles/HeroJohan.scss'
 import heroImg from './styles/img/sportsmans.png'
 
-function HeroJohan() {
+function HeroJohan({ setShow }) {
   return (
     <section className="hero-johan">
-      <Header modClass="light" />
+      <Header modClass="light" setShow={setShow} />
       <div className="hero-johan__wrapper">
         <div className="hero-johan__box hero-johan__box_1">
           <div className="hero-johan__title">
